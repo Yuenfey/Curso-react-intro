@@ -8,19 +8,23 @@
 
 html {
   font-size: 62.5%;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   min-width: 480px;
-  height: auto;
   display: flex;
   justify-content: center;
 }
 
-body{
+body {
   width: 100%;
   justify-content: center;
   height: auto;
   margin-top: 50px;
+  background: linear-gradient(135deg, #B6B5F5, #E54653);
+  background-size: cover;
+  background-repeat:no-repeat;
 }
+
 
 h1{
   display: flex;
@@ -82,6 +86,15 @@ input{
   margin-top: 10px;
 }
 
+section{
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 ul{
   display: flex;
   flex-direction: row;
@@ -97,7 +110,7 @@ li{
   list-style: none;
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
   font-size: 1.5rem;
   border: 2px;
@@ -109,13 +122,30 @@ li{
   padding: 4px;
 }
 
+.TodoItem-p--completed{
+  text-decoration: line-through;
+}
+
+.completed-preview{
+  visibility: hidden;
+}
+
 .completed{
-  display: inline-flex;
+  position:absolute;
   font-size: 1.8rem;
+  left: 10%;
+  visibility: visible;
 }
 
 .deleted{
+  position: absolute;
   font-size: 1.8rem;
+  right: 3%;
+}
+
+.deleted:hover{
+  transform: rotate(360deg);
+  transition: .5s ease;
 }
 
 .create-task{
@@ -130,6 +160,11 @@ button{
   border-radius: 10px;
   font-size: 2.5rem;
   padding: 5px;
+  height: auto;
+}
+
+button:hover{
+  background-color: #E54653;
 }
 
 

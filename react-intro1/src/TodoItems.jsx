@@ -1,13 +1,15 @@
 function TodoItems(props) {
   return (
     <>
-
-      <span className="completed">✅</span>
-      <li>
-        {props.text}
-      </li>
-      <span className="deleted">❌</span>
-
+      <section>
+        <span className={`completed-preview ${props.completed && "completed"}`}>✅</span>
+        <li>
+          <p className={`TodoItem-p ${props.completed && "TodoItem-p--completed"}`}>
+          {props.text}
+          </p>
+        </li>
+        <span className="deleted">❌</span>
+      </section>
     </>
   )
 }

@@ -1,7 +1,7 @@
 function CreateTodoButton() {
   return (
     <div className="create-task">
-      <button> New Task </button>
+      <button onClick={() => {console.log("clic")}}> New Task </button>
     </div>
   )
 }

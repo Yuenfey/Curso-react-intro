@@ -1,4 +1,3 @@
-
 import { TodoCounter } from './TodoCounter'
 import { TodoSearch } from './TodoSearch'
 import { TodoList } from './TodoList'
@@ -6,11 +5,13 @@ import { TodoItems } from './TodoItems'
 import { CreateTodoButton } from './CreateTodoButton'
 
 function App() {
+
+
   const defaultTodos = 
   [
-    {text: 'cebolla', completed: false},
+    {text: 'cebolla', completed: true},
     {text: 'ajo', completed: false},
-    {text: 'brocoli', completed: false},
+    {text: 'brocoli', completed: true},
     {text: 'espinaca', completed: false},
     {text: 'rabano', completed: false},
     {text: 'cilantro', completed: false}
