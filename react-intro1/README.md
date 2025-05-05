@@ -1,8 +1,16 @@
-# React + Vite
+# To-Do App with React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación de lista de tareas (To-Do) creada con React y Vite. La aplicación permite a los usuarios agregar, buscar, completar y eliminar tareas de manera interactiva.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Agregar tareas:** Los usuarios pueden agregar nuevas tareas a la lista.
+- **Buscar tareas:** Incluye un campo de búsqueda para filtrar tareas por texto.
+- **Completar tareas:** Los usuarios pueden marcar tareas como completadas.
+- **Eliminar tareas:** Las tareas pueden ser eliminadas de la lista.
+- **Modal interactivo:** Un modal se utiliza para agregar nuevas tareas.
+- **Persistencia local:** Las tareas se guardan en el almacenamiento local del navegador usando un custom hook.
+
+## Estructura del Proyecto
+
+El proyecto está organizado de la siguiente manera:
